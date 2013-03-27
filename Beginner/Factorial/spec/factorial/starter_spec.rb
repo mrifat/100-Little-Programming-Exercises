@@ -5,7 +5,7 @@ describe Starter do
   let(:starter) { Starter.new(output) }
 
   describe "#start" do
-    it "sends a welcom message" do
+    it "sends a welcome message" do
       output.should_receive(:puts).with('Welcome to find the Factorial program!')
       starter.start
     end

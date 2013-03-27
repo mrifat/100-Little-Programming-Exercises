@@ -12,7 +12,7 @@ class Currency
 
   def convert(*args)
     amount, from, to = args.shift
-    amount.to_i <= 0 ? "Nothing to convert" : amount.to_i > 0 ? @currency.has_key?(from) ? @currency[from].has_key?(to) ? (amount.to_i / @currency[from][to]).round(2) : "No such currency" : "No such currency" : "Amount must be numaric"
+    amount.to_i <= 0 ? "Nothing to convert" : @currency.has_key?(from) ? @currency[from].has_key?(to) ? @x = (amount.to_i / @currency[from][to]).round(2) : "No such currency" : "No such currency"
   end
 
   def show
