@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'calculator'
+
+ui = UI.new(STDOUT)
+at_exit { puts "GoodBye" }
+ui.start
+
+while number = gets.chomp.to_i
+  number == 4 ? break : ui.load_menu(number)
+end

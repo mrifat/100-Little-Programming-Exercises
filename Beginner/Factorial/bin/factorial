@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'factorial'
+
+starter = Starter.new(STDOUT)
+at_exit { puts "\nGoodbye.\n*********" }
+starter.start
+puts "Enter -1 to exit"
+
+while number = gets.chomp.to_i
+  number == -1 ? break : starter.find(number)
+end

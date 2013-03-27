@@ -1,0 +1,6 @@
+Welcome to currency calculator:
+Enter the number corresponding to the menu item:
+1- List of all available currencies and their conversion rate
+2- Convert
+3- Help
+4- Exit
